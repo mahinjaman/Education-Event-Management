@@ -1,8 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { FaPlay } from "react-icons/fa";
-import heroImage from '../../public/images/hero-img.png';
-import heroImgBg from '../../public/images/hero-img-bg.png';
+import heroImage from '../../../public/images/hero-img.png';
+import heroImgBg from '../../../public/images/hero-img-bg.png';
 
 
 const Hero = () => {

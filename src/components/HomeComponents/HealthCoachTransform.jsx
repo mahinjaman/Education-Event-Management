@@ -1,16 +1,16 @@
 import React from 'react';
-import Exercise from '../../public/images/icon/exercise.png'
-import Nutrition from '../../public/images/icon/nutrition.png'
-import Guides from '../../public/images/icon/guides.png'
-import OnlineClass from '../../public/images/icon/online-class.png'
-import iconBg from '../../public/images/icon/card-bg.png'
+import Exercise from '../../../public/images/icon/exercise.png'
+import Nutrition from '../../../public/images/icon//nutrition.png'
+import Guides from '../../../public/images/icon/guides.png'
+import OnlineClass from '../../../public/images/icon/online-class.png'
+import iconBg from '../../../public/images/icon/card-bg.png'
 import Carousel from './Slider';
-import slideImg1 from '../../public/images/slider-images/slider1.png'
-import slideImg2 from '../../public/images/slider-images/slider2.png'
-import slideImg3 from '../../public/images/slider-images/slider3.png'
-import slideImg4 from '../../public/images/slider-images/slider4.png'
-import slideImg5 from '../../public/images/slider-images/slider5.png'
-import slideImg6 from '../../public/images/slider-images/slider6.png'
+import slideImg1 from '../../../public/images/slider-images/slider1.png'
+import slideImg2 from '../../../public/images/slider-images/slider2.png'
+import slideImg3 from '../../../public/images/slider-images/slider3.png'
+import slideImg4 from '../../../public/images/slider-images/slider4.png'
+import slideImg5 from '../../../public/images/slider-images/slider5.png'
+import slideImg6 from '../../../public/images/slider-images/slider6.png'
 const HealthCoachTransform = () => {
     const items = [
         <div className="item" data-value="1">

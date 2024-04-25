@@ -2,3 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 @import "react-alice-carousel/lib/alice-carousel.css";
+
+.upToDown{
+    animation: leftToRight;
+    animation-duration: 0.8s;
+}
+
+@keyframes leftToRight {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}

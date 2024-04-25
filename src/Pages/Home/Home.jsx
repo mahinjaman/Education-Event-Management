@@ -1,6 +1,7 @@
 import React from 'react';
-import Hero from '../components/Hero';
-import HealthCoachTransform from '../components/HealthCoachTransform';
+import Hero from '../../components/HomeComponents/Hero';
+import HealthCoachTransform from '../../components/HomeComponents/HealthCoachTransform';
+
 const Home = () => {
     return (
         <div>

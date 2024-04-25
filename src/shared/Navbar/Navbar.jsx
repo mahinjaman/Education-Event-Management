@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import { delay, motion } from "framer-motion"
+import { iterate } from 'localforage';
 
 const Navbar = () => {
     const [staticNav, setStaticNav] = useState(false);
 
     const PagesMenu = <>
-    <li><NavLink to={'/teacher'}>Teacher</NavLink></li>
-    <li><NavLink to={'/teacher'}>Event</NavLink></li>
-    <li><NavLink to={'/teacher'}>Testimonial</NavLink></li>
-    <li><NavLink to={'/teacher'}>Sign In</NavLink></li>
+        <li><NavLink to={'/teacher'}>Teacher</NavLink></li>
+        <li><NavLink to={'/teacher'}>Event</NavLink></li>
+        <li><NavLink to={'/teacher'}>Testimonial</NavLink></li>
+        <li><NavLink to={'/teacher'}>Sign In</NavLink></li>
     </>
 
 
@@ -16,7 +18,7 @@ const Navbar = () => {
         <li> <NavLink to={'/'}>Home</NavLink> </li>
         <li> <NavLink to={'/about'}>About</NavLink> </li>
         <li> <NavLink to={'/services'}>Services</NavLink> </li>
-        <li> 
+        <li>
             <details>
                 <summary>Pages</summary>
                 <ul className='p-2'>
@@ -30,19 +32,19 @@ const Navbar = () => {
         <li> <NavLink to={'/contact'}>Contact</NavLink> </li>
     </>
 
-    window.addEventListener('scroll', ()=>{
+    window.addEventListener('scroll', () => {
 
-        if(window.scrollY > 300){
+        if (window.scrollY > 300) {
             setStaticNav(true)
         }
-        else{
+        else {
             setStaticNav(false)
         }
 
     })
 
     return (
-        <div className={`navbar bg-base-100 py-10 px-14 lg:px-40 ${staticNav ? 'fixed top-0 left-0 py-5 shadow-2xl' : ''}`}>
+        <div className={`navbar  bg-base-100 py-10 px-14 lg:px-40 ${staticNav ? 'fixed py-5 shadow-2xl upToDown' : ''}`}>
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
