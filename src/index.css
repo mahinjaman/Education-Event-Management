@@ -4,11 +4,11 @@
 @import "react-alice-carousel/lib/alice-carousel.css";
 
 .upToDown{
-    animation: leftToRight;
+    animation: upToDown;
     animation-duration: 0.8s;
 }
 
-@keyframes leftToRight {
+@keyframes upToDown {
     0% {
         opacity: 0;
         transform: translateY(-100%);
@@ -16,5 +16,21 @@
     100% {
         opacity: 1;
         transform: translateY(0%);
+    }
+}
+
+.leftToRight {
+    animation: leftToRight;
+    animation-duration:3s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes leftToRight {
+    0%{
+        transform: translateX(0%);
+    }
+    50%{
+        transform: translateX(-20%);
     }
 }
