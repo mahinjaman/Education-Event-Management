@@ -12,9 +12,9 @@ const AboutUs = () => {
 
             <div className='relative'>
                 <img className=' lg:absolute' src={aboutMainImg} alt="" />
-                <img className='w-40 -top-10 right-0 md: leftToRight absolute md:top-0 md:right-8' src={aboutSubImg1} alt="" />
-                <img className='w-40 bottom-0 md: leftToRight absolute md:-bottom-7 left-8' src={aboutSubImg2} alt="" />
-                <img className='w-40 top-0  md: leftToRight absolute md:top-0 -left-10 -z-10 opacity-15' src={aboutSubImg3} alt="" />
+                <img className='w-40 lg:w-52 -top-10 right-0 md: leftToRight absolute md:top-0 md:right-8' src={aboutSubImg1} alt="" />
+                <img className='w-40 lg:w-52 bottom-0 md: leftToRight absolute md:-bottom-7 left-8 lg:left-14' src={aboutSubImg2} alt="" />
+                <img className='w-40 lg:w-52 top-0  md: leftToRight absolute md:top-0 -left-10 -z-10 opacity-15' src={aboutSubImg3} alt="" />
             </div>
             <div>
                 <h4 className='text-[#fd6d4b] text-lg font-semibold'>ABOUT US</h4>
