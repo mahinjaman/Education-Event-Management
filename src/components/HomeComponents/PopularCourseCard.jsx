@@ -2,12 +2,12 @@ import PropTypes from 'prop-types';
 import { GiBlackBook } from "react-icons/gi";
 import { IoMdPerson } from "react-icons/io";
 import { MdOutlineShoppingCart } from "react-icons/md";
-const PopularCourseCard = ({course}) => {
+const PopularCourseCard = ({ course, handleAddToCard }) => {
     const { id,course_img,course_title,lesson,students,price,rating} = course;
     return (
-        <div className=' bg-slate-700 rounded-md text-gray-200 p-5'>
+        <div className=' bg-slate-700 rounded-md text-gray-200 p-5 group'>
             <div className='overflow-hidden  rounded-md mb-4'>
-                <img className='duration-500 hover:scale-110'  src={course_img} alt={course_title} />
+                <img className='duration-500 group-hover:scale-110'  src={course_img} alt={course_title} />
             </div>
             <div className='flex flex-col gap-4 relative'>
                 <div className="rating">
@@ -25,7 +25,7 @@ const PopularCourseCard = ({course}) => {
                 </div>
                 <div className='flex justify-between text-lg'>
                     <p className='text-2xl font-semibold text-[#FD6D4B]'>${price} <span className='text-xl text-slate-400' style={{ textDecoration: 'line-through' }}>$100</span></p>
-                    <button className='flex items-center'><MdOutlineShoppingCart></MdOutlineShoppingCart> <span className='ml-2'>Add To card</span></button>
+                    <button className='flex items-center' onClick={() => handleAddToCard(id)}><MdOutlineShoppingCart></MdOutlineShoppingCart> <span className='ml-2'>Add To card</span></button>
                 </div>
             </div>
         </div>
@@ -34,6 +34,7 @@ const PopularCourseCard = ({course}) => {
 
 PopularCourseCard.propTypes = {
     course: PropTypes.object.isRequired,
+    handleAddToCard: PropTypes.func.isRequired,
 }
 
 export default PopularCourseCard;

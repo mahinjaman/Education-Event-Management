@@ -1,13 +1,24 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { delay, motion } from "framer-motion"
-import { iterate } from 'localforage';
-
+import Logo from '../../../public/images/icon/logo.png'
 const Navbar = () => {
     const [staticNav, setStaticNav] = useState(false);
 
+    useEffect(()=>{
+        window.addEventListener('scroll', () => {
+
+            if (window.scrollY > 300) {
+                setStaticNav(true)
+            }
+            else {
+                setStaticNav(false)
+            }
+
+        })
+    },[])
+
     const PagesMenu = <>
-        <li><NavLink to={'/teacher'}>Teacher</NavLink></li>
+        <li><NavLink to={'/teacher'}>Branding</NavLink></li>
         <li><NavLink to={'/teacher'}>Event</NavLink></li>
         <li><NavLink to={'/teacher'}>Testimonial</NavLink></li>
         <li><NavLink to={'/teacher'}>Sign In</NavLink></li>
@@ -17,10 +28,9 @@ const Navbar = () => {
     const menu = <>
         <li> <NavLink to={'/'}>Home</NavLink> </li>
         <li> <NavLink to={'/about'}>About</NavLink> </li>
-        <li> <NavLink to={'/services'}>Services</NavLink> </li>
         <li>
             <details>
-                <summary>Pages</summary>
+                <summary>Services</summary>
                 <ul className='p-2'>
                     {
                         PagesMenu
@@ -28,20 +38,12 @@ const Navbar = () => {
                 </ul>
             </details>
         </li>
+        <li> <NavLink to={'/services'}>Teachers</NavLink> </li>
         <li> <NavLink to={'/blog'}>Blog</NavLink> </li>
         <li> <NavLink to={'/contact'}>Contact</NavLink> </li>
     </>
 
-    window.addEventListener('scroll', () => {
-
-        if (window.scrollY > 300) {
-            setStaticNav(true)
-        }
-        else {
-            setStaticNav(false)
-        }
-
-    })
+    
 
     return (
         <div className={`navbar  bg-base-100 py-10 px-14 lg:px-40 ${staticNav ? 'fixed py-5 shadow-2xl upToDown z-50' : ''}`}>
@@ -56,7 +58,7 @@ const Navbar = () => {
                         }
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">daisyUI</a>
+                <Link to={'/'}><img src={Logo} alt="Logo" /></Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">

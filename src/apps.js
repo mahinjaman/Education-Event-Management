@@ -7,7 +7,7 @@ const Counter = (number, id) =>{
         if(countNumber > number){
             clearInterval(setIntervalId);
         }
-    },200)
+    },50)
 }
 
 export {Counter}

@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <>
             <footer className='footer' style={{ backgroundImage: `url(${footerBg})` }}>
-                <div className='text-lg p-10 md:py-40 md:px-32 grid md:grid-cols-2 gap-10 lg:grid-cols-4'>
+                <div className='text-lg w-10/12 mx-auto md:w-full p-10 md:py-24 md:px-32 grid md:grid-cols-2 gap-10 lg:grid-cols-4'>
                     <nav className='flex flex-col gap-4 md:text-start w-full'>
                         <div>
                             <img src={Logo} alt="Logo" />

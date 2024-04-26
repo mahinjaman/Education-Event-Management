@@ -11,7 +11,7 @@ import slideImg3 from '../../../public/images/slider-images/slider3.png'
 import slideImg4 from '../../../public/images/slider-images/slider4.png'
 import slideImg5 from '../../../public/images/slider-images/slider5.png'
 import slideImg6 from '../../../public/images/slider-images/slider6.png'
-const HealthCoachTransform = () => {
+const Featured = () => {
     const items = [
         <div className="item" data-value="1">
             <img src={slideImg1} alt="" />
@@ -35,14 +35,14 @@ const HealthCoachTransform = () => {
 
    
     return (
-        <div className= 'mt-28 space-y-20 py-10'>
-            {/* Main Health */}
+        <div className='my-20 space-y-20 py-10  xl:w-10/12 mx-auto'>
+            {/* Featured */}
             <div >
                 <div className='text-center md:w-7/12 mx-auto'>
                     <h4 className='text-[#fd6d4b] text-lg font-semibold'>WHY HEALTH COACH</h4>
                     <h1 className='lg:text-6xl font-semibold mb-10'>Transform Your Body, Transform Your Life</h1>
                 </div>
-                <div className='grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 md:w-10/12 mx-auto'>
+                <div className='grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4 md:w-10/12 mx-auto p-10'>
                     <div className='bg-white text-base-100 flex flex-col items-center p-5 duration-500 hover:bg-base-200 hover:text-white rounded text-center'>
                         <div className='bg-no-repeat bg-[100%] p-10' style={{ backgroundImage: `url(${iconBg})` }}>
                             <img className=' text-white' src={Exercise} alt="Exercise" />
@@ -81,7 +81,7 @@ const HealthCoachTransform = () => {
                 <span className='w-2/12 border h-0'></span>
             </div>
 
-            {/* Slider */}
+            {/* Brand Area */}
             <div className='p-10 md:w-10/12 mx-auto rounded bg-slate-400'>
                 <Carousel items={items}></Carousel>
             </div>
@@ -89,4 +89,4 @@ const HealthCoachTransform = () => {
     );
 };
 
-export default HealthCoachTransform;
+export default Featured;
