@@ -1,4 +1,4 @@
-const Counter = (number, id) =>{
+const Counter = (number, id, countNum) =>{
     const container = document.getElementById(id);
     let countNumber = 0;
     const setIntervalId = setInterval(()=>{
@@ -7,7 +7,7 @@ const Counter = (number, id) =>{
         if(countNumber > number){
             clearInterval(setIntervalId);
         }
-    },50)
+    },countNum)
 }
 
 export {Counter}
