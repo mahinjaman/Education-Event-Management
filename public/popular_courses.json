@@ -1,0 +1,50 @@
+[
+  {
+    "course_img": "https://ibb.co/LPVyHjF",
+    "course_title": "Cardio Blast",
+    "lesson": 10,
+    "students": 25,
+    "price": 50,
+    "rating": 4.5
+  },
+  {
+    "course_img": "https://ibb.co/LgSSJ57",
+    "course_title": "Strength Training 101",
+    "lesson": 8,
+    "students": 20,
+    "price": 60,
+    "rating": 4.8
+  },
+  {
+    "course_img": "https://ibb.co/4FGQxGz",
+    "course_title": "Yoga Fusion",
+    "lesson": 12,
+    "students": 30,
+    "price": 55,
+    "rating": 4.7
+  },
+  {
+    "course_img": "https://ibb.co/Mf6tf1y",
+    "course_title": "HIIT Intensity",
+    "lesson": 15,
+    "students": 22,
+    "price": 70,
+    "rating": 4.6
+  },
+  {
+    "course_img": "https://ibb.co/p42pyCV",
+    "course_title": "Pilates Core",
+    "lesson": 10,
+    "students": 18,
+    "price": 65,
+    "rating": 4.3
+  },
+  {
+    "course_img": "https://ibb.co/NsjNpHv",
+    "course_title": "CrossFit Challenge",
+    "lesson": 20,
+    "students": 35,
+    "price": 75,
+    "rating": 4.9
+  }
+]

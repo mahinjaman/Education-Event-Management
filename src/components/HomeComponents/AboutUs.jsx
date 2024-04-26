@@ -8,17 +8,17 @@ import aboutSubImg3 from '../../../public//images/about-img//about_sub3.png'
 import { NavLink } from 'react-router-dom';
 const AboutUs = () => {
     return (
-        <div className='grid lg:grid-cols-2 w-10/12 gap-14 mx-auto py-20'> 
+        <div className='grid grid-cols-1 lg:grid-cols-2 w-10/12 gap-14 mx-auto py-20'> 
 
             <div className='relative'>
-                <img className='absolute' src={aboutMainImg} alt="" />
-                <img className='leftToRight absolute top-0 right-8' src={aboutSubImg1} alt="" />
-                <img className='leftToRight absolute -bottom-7 left-8' src={aboutSubImg2} alt="" />
-                <img className='leftToRight absolute top-0 -left-10 -z-10 opacity-15' src={aboutSubImg3} alt="" />
+                <img className=' lg:absolute' src={aboutMainImg} alt="" />
+                <img className='w-40 -top-10 right-0 md: leftToRight absolute md:top-0 md:right-8' src={aboutSubImg1} alt="" />
+                <img className='w-40 bottom-0 md: leftToRight absolute md:-bottom-7 left-8' src={aboutSubImg2} alt="" />
+                <img className='w-40 top-0  md: leftToRight absolute md:top-0 -left-10 -z-10 opacity-15' src={aboutSubImg3} alt="" />
             </div>
             <div>
                 <h4 className='text-[#fd6d4b] text-lg font-semibold'>ABOUT US</h4>
-                <h1 style={{lineHeight: '60px'}} className='text-4xl lg:text-5xl font-bold mb-4'>Here We Are Ready To Give All Our Best At 100 %</h1>
+                <h1 style={{lineHeight: '60px'}} className='text-xl  md:text-4xl lg:text-5xl font-bold mb-4'>Here We Are Ready To Give All Our Best At 100 %</h1>
                 <p className='leading-loose text-xl mb-4'>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <div className='flex gap-5 items-center mb-4'>
                     <img className='p-5 bg-slate-200 rounded-full' src={getInspired} alt="Get Inspired" />

@@ -40,7 +40,7 @@ const HealthCoachTransform = () => {
             <div >
                 <div className='text-center md:w-7/12 mx-auto'>
                     <h4 className='text-[#fd6d4b] text-lg font-semibold'>WHY HEALTH COACH</h4>
-                    <h1 className='text-6xl font-semibold mb-10'>Transform Your Body, Transform Your Life</h1>
+                    <h1 className='lg:text-6xl font-semibold mb-10'>Transform Your Body, Transform Your Life</h1>
                 </div>
                 <div className='grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 md:w-10/12 mx-auto'>
                     <div className='bg-white text-base-100 flex flex-col items-center p-5 duration-500 hover:bg-base-200 hover:text-white rounded text-center'>
