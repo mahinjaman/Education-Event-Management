@@ -5,6 +5,7 @@ import Popular_course from '../../components/HomeComponents/Popular_course';
 import { Helmet } from 'react-helmet-async';
 import Featured from '../../components/HomeComponents/Featured';
 import FunFact from '../../components/HomeComponents/FunFact';
+import GymBenefits from '../../components/HomeComponents/GymBenefits';
 
 const Home = () => {
     return (
@@ -17,6 +18,7 @@ const Home = () => {
             <AboutUs></AboutUs>
             <Popular_course></Popular_course>
             <FunFact></FunFact>
+            <GymBenefits></GymBenefits>
         </div>
     );
 };

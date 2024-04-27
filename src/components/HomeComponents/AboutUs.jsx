@@ -35,7 +35,7 @@ const AboutUs = () => {
                         <p className='text-xl leading-relaxed '>Duis aute irure dolor in reprehenderit involuptate velit esse cillum dolore</p>
                     </div>
                 </div>
-                <button className=' bg-[#fd6d4b] font-bold text-white tracking-wide text-lg py-4 px-5 rounded-md duration-300 hover:shadow-xl hover:bg-base-100 hover:scale-105'><NavLink to={'/about'}>More About Us</NavLink></button>
+                <button className=' primary-btn '><NavLink to={'/about'}>More About Us</NavLink></button>
             </div>
             
         </div>
