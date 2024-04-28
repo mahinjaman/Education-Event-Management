@@ -7,6 +7,7 @@ import Featured from '../../components/HomeComponents/Featured';
 import FunFact from '../../components/HomeComponents/FunFact';
 import GymBenefits from '../../components/HomeComponents/GymBenefits';
 import Instructors from '../../components/HomeComponents/Instructors';
+import Testimonial from '../../components/HomeComponents/Testimonial';
 
 const Home = () => {
     return (
@@ -21,6 +22,7 @@ const Home = () => {
             <FunFact></FunFact>
             <GymBenefits></GymBenefits>
             <Instructors></Instructors>
+            <Testimonial></Testimonial>
         </div>
     );
 };
