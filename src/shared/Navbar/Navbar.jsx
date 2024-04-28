@@ -46,7 +46,7 @@ const Navbar = () => {
     
 
     return (
-        <div className={`navbar  bg-base-100 py-10 px-14 lg:px-40 ${staticNav ? 'fixed py-5 shadow-2xl upToDown z-50' : ''}`}>
+        <div className={`navbar py-5 lg:px-40 text-white bg-slate-900  ${staticNav ? 'fixed py-5 upToDown z-50' : ' border-b'}`}>
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -70,6 +70,7 @@ const Navbar = () => {
             <div className="navbar-end">
                 <Link>Log In</Link>
             </div>
+            
         </div>
     );
 };

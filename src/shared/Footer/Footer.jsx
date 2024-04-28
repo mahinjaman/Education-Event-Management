@@ -1,11 +1,11 @@
 import React from 'react';
-import Logo from '../../../public/images/Logo.png';
+import Logo from '../../../public/images/icon/logo.png';
 import footerBg from '../../../public/images/footer-bg.jpg'
 import Copyright from './Copyright';
 const Footer = () => {
     return (
         <>
-            <footer className='footer' style={{ backgroundImage: `url(${footerBg})` }}>
+            <footer className='footer text-white' style={{ backgroundImage: `url(${footerBg})` }}>
                 <div className='text-lg w-10/12 mx-auto md:w-full p-10 md:py-24 md:px-32 grid md:grid-cols-2 gap-10 lg:grid-cols-4'>
                     <nav className='flex flex-col gap-4 md:text-start w-full'>
                         <div>
@@ -32,8 +32,7 @@ const Footer = () => {
                         <div className='flex md:flex-col gap-4'>
                             <a className="link link-hover">About us</a>
                             <a className="link link-hover">Contact</a>
-                            <a className="link link-hover">Jobs</a>
-                            <a className="link link-hover">Press kit</a>
+                            <a className="link link-hover">Login</a>
                         </div>
                     </nav>
                     <nav className='flex flex-col w-full md:text-start'>

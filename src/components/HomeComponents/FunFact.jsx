@@ -14,7 +14,7 @@ const FunFact = () => {
     })
     
     return (
-        <div style={{ backgroundImage: `url(${funfactMainBg})`}} className='md:my-40'>
+        <div style={{ backgroundImage: `url(${funfactMainBg})`}} className='md:my-40 text-white'>
             <div className='relative bg-blue-950 bg-opacity-40 py-20'>
                 <div className='w-10/12 mx-auto'>
                     <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 lg:w-full'>

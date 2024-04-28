@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "name": "Alexandra Lee",
+    "position": "Gym Instructor",
+    "social": [
+      {
+        "link": "facebook.com/AlexandraFitness",
+        "icon": "https://i.ibb.co/6Fd8vwn/facebook-svgrepo-com.png"
+      },
+      {
+        "link": "@alexandra_fitness",
+        "icon": "https://i.ibb.co/1zPCVD9/insta-svgrepo-com.png"
+      },
+      {
+        "link": "pinterest.com/alexandrafitspo",
+        "icon": "https://i.ibb.co/KzmhL6c/pinterest-180-svgrepo-com.png"
+      },
+      {
+        "link": "linkedin.com/in/alexandra-lee-fitness",
+        "icon": "https://i.ibb.co/q905DJh/linkedin-svgrepo-com.png"
+      },
+      {
+        "link": "@alex_fitness",
+        "icon": "https://i.ibb.co/19mJRkz/twitter-154-svgrepo-com.png "
+      }
+    ],
+    "author_img": "https://i.ibb.co/WpkH09B/insta-4.jpg"
+  },
+  {
+    "id": 2,
+    "name": "James Smith",
+    "position": "Personal Trainer",
+    "social": [
+      {
+        "link": "facebook.com/JamesFitness",
+        "icon": "https://i.ibb.co/6Fd8vwn/facebook-svgrepo-com.png"
+      },
+      {
+        "link": "@james_fitness",
+        "icon": "https://i.ibb.co/1zPCVD9/insta-svgrepo-com.png"
+      },
+      {
+        "link": "pinterest.com/jamesfitinspo",
+        "icon": "https://i.ibb.co/KzmhL6c/pinterest-180-svgrepo-com.png"
+      },
+      {
+        "link": "linkedin.com/in/james-smith-fitness",
+        "icon": "https://i.ibb.co/q905DJh/linkedin-svgrepo-com.png"
+      },
+      {
+        "link": "@jamesfittrainer",
+        "icon": "https://i.ibb.co/19mJRkz/twitter-154-svgrepo-com.png"
+      }
+    ],
+    "author_img": "https://i.ibb.co/z8KkBBr/insta-1.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Michelle Johnson",
+    "position": "Group Fitness Instructor",
+    "social": [
+      {
+        "link": "facebook.com/MichelleFit",
+        "icon": "https://i.ibb.co/6Fd8vwn/facebook-svgrepo-com.png"
+      },
+      {
+        "link": "@michelle_fitness",
+        "icon": "https://i.ibb.co/1zPCVD9/insta-svgrepo-com.png"
+      },
+      {
+        "link": "pinterest.com/michellefitinspo",
+        "icon": "https://i.ibb.co/KzmhL6c/pinterest-180-svgrepo-com.png"
+      },
+      {
+        "link": "linkedin.com/in/michelle-johnson-fitness",
+        "icon": "https://i.ibb.co/q905DJh/linkedin-svgrepo-com.png"
+      },
+      {
+        "link": "@michelle_fit",
+        "icon": "https://i.ibb.co/19mJRkz/twitter-154-svgrepo-com.png"
+      }
+    ],
+    "author_img": "https://i.ibb.co/LtW826J/insta-2.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Ryan Taylor",
+    "position": "Strength and Conditioning Coach",
+    "social": [
+      {
+        "link": "facebook.com/RyanFitness",
+        "icon": "https://i.ibb.co/6Fd8vwn/facebook-svgrepo-com.png"
+      },
+      {
+        "link": "@ryan_fitness",
+        "icon": "https://i.ibb.co/1zPCVD9/insta-svgrepo-com.png"
+      },
+      {
+        "link": "pinterest.com/ryanfitinspo",
+        "icon": "https://i.ibb.co/KzmhL6c/pinterest-180-svgrepo-com.png"
+      },
+      {
+        "link": "linkedin.com/in/ryan-taylor-fitness",
+        "icon": "https://i.ibb.co/q905DJh/linkedin-svgrepo-com.png"
+      },
+      {
+        "link": "@ryan_strength",
+        "icon": "https://i.ibb.co/19mJRkz/twitter-154-svgrepo-com.png"
+      }
+    ],
+    "author_img": "https://i.ibb.co/vm1CCkh/insta-3.jpg"
+  }
+]

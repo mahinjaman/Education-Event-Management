@@ -35,55 +35,57 @@ const Featured = () => {
 
    
     return (
-        <div className='my-20 space-y-20 py-10  xl:w-10/12 mx-auto'>
-            {/* Featured */}
-            <div >
-                <div className='text-center md:w-7/12 mx-auto'>
-                    <h4 className='text-[#fd6d4b] text-lg font-semibold'>WHY HEALTH COACH</h4>
-                    <h1 className='lg:text-6xl font-semibold mb-10'>Transform Your Body, Transform Your Life</h1>
+        <div className='bg-slate-100 text-via-blue-950'>
+            <div className='space-y-20 py-24  xl:w-10/12 mx-auto'>
+                {/* Featured */}
+                <div >
+                    <div className='text-center md:w-7/12 mx-auto'>
+                        <h4 className='text-[#fd6d4b] text-lg font-semibold'>WHY HEALTH COACH</h4>
+                        <h1 className='lg:text-6xl font-semibold mb-10'>Transform Your Body, Transform Your Life</h1>
+                    </div>
+                    <div className='grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4 md:w-10/12 mx-auto p-10'>
+                        <div className='bg-white shadow-lg  flex flex-col items-center p-5 duration-500 hover:bg-slate-500 hover:text-white rounded text-center'>
+                            <div className='bg-no-repeat bg-[100%] p-10' style={{ backgroundImage: `url(${iconBg})` }}>
+                                <img className=' text-white' src={Exercise} alt="Exercise" />
+                            </div>
+                            <h1 className='font-semibold text-xl'>Exercise</h1>
+                            <p className='text-lg'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt,</p>
+                        </div>
+                        <div className='bg-white shadow-lg  flex flex-col items-center p-5 duration-500 hover:bg-slate-500 hover:text-white rounded text-center'>
+                            <div className='bg-no-repeat bg-[100%] p-10' style={{ backgroundImage: `url(${iconBg})` }}>
+                                <img className=' text-white' src={Nutrition} alt="Exercise" />
+                            </div>
+                            <h1 className='font-semibold text-xl'>Nutrition</h1>
+                            <p className='text-lg'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt,</p>
+                        </div>
+                        <div className='bg-white shadow-lg  flex flex-col items-center p-5 duration-500 hover:bg-slate-500 hover:text-white rounded text-center'>
+                            <div className='bg-no-repeat bg-[100%] p-10' style={{ backgroundImage: `url(${iconBg})` }}>
+                                <img className=' text-white' src={Guides} alt="Exercise" />
+                            </div>
+                            <h1 className='font-semibold text-xl'>Guides</h1>
+                            <p className='text-lg'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt,</p>
+                        </div>
+                        <div className='bg-white shadow-lg  flex flex-col items-center p-5 duration-500 hover:bg-slate-500 hover:text-white rounded text-center'>
+                            <div className='bg-no-repeat bg-[100%] p-10' style={{ backgroundImage: `url(${iconBg})` }}>
+                                <img src={OnlineClass} alt="Exercise" />
+                            </div>
+                            <h1 className='font-semibold text-xl'>Online Class</h1>
+                            <p className='text-lg'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt,</p>
+                        </div>
+
+                    </div>
                 </div>
-                <div className='grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4 md:w-10/12 mx-auto p-10'>
-                    <div className='bg-white text-base-100 flex flex-col items-center p-5 duration-500 hover:bg-base-200 hover:text-white rounded text-center'>
-                        <div className='bg-no-repeat bg-[100%] p-10' style={{ backgroundImage: `url(${iconBg})` }}>
-                            <img className=' text-white' src={Exercise} alt="Exercise" />
-                        </div>
-                        <h1 className='font-semibold text-xl'>Exercise</h1>
-                        <p className='text-lg'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt,</p>
-                    </div>
-                    <div className='bg-white text-base-100 flex flex-col items-center p-5 duration-500 hover:bg-base-200 hover:text-white rounded text-center'>
-                        <div className='bg-no-repeat bg-[100%] p-10' style={{ backgroundImage: `url(${iconBg})` }}>
-                            <img className=' text-white' src={Nutrition} alt="Exercise" />
-                        </div>
-                        <h1 className='font-semibold text-xl'>Nutrition</h1>
-                        <p className='text-lg'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt,</p>
-                    </div>
-                    <div className='bg-white text-base-100 flex flex-col items-center p-5 duration-500 hover:bg-base-200 hover:text-white rounded text-center'>
-                        <div className='bg-no-repeat bg-[100%] p-10' style={{ backgroundImage: `url(${iconBg})` }}>
-                            <img className=' text-white' src={Guides} alt="Exercise" />
-                        </div>
-                        <h1 className='font-semibold text-xl'>Guides</h1>
-                        <p className='text-lg'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt,</p>
-                    </div>
-                    <div className='bg-white text-base-100 flex flex-col items-center p-5 duration-500 hover:bg-base-200 hover:text-white rounded text-center'>
-                        <div className='bg-no-repeat bg-[100%] p-10' style={{ backgroundImage: `url(${iconBg})` }}>
-                            <img src={OnlineClass} alt="Exercise" />
-                        </div>
-                        <h1 className='font-semibold text-xl'>Online Class</h1>
-                        <p className='text-lg'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt,</p>
-                    </div>
 
+                <div className='flex justify-center items-center gap-4'>
+                    <span className='w-2/12 border h-0'></span>
+                    <p className='text-2xl'>WE WORKED WITH GLOBAL LARGEST BRANDS</p>
+                    <span className='w-2/12 border h-0'></span>
                 </div>
-            </div>
 
-            <div className='flex justify-center items-center gap-4'>
-                <span className='w-2/12 border h-0'></span>
-                <p className='text-2xl'>WE WORKED WITH GLOBAL LARGEST BRANDS</p>
-                <span className='w-2/12 border h-0'></span>
-            </div>
-
-            {/* Brand Area */}
-            <div className='p-10 md:w-10/12 mx-auto rounded bg-slate-400'>
-                <Carousel items={items}></Carousel>
+                {/* Brand Area */}
+                <div className='p-10 md:w-10/12 mx-auto rounded bg-slate-400'>
+                    <Carousel items={items}></Carousel>
+                </div>
             </div>
         </div>
     );

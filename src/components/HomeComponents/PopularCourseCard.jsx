@@ -5,7 +5,7 @@ import { MdOutlineShoppingCart } from "react-icons/md";
 const PopularCourseCard = ({ course, handleAddToCard }) => {
     const { id,course_img,course_title,lesson,students,price,rating} = course;
     return (
-        <div className=' bg-slate-700 rounded-md text-gray-200 p-5 group'>
+        <div className=' bg-orange-50 rounded-md text-via-blue-950 p-5 group'>
             <div className='overflow-hidden  rounded-md mb-4'>
                 <img className='duration-500 group-hover:scale-110'  src={course_img} alt={course_title} />
             </div>
@@ -18,8 +18,8 @@ const PopularCourseCard = ({ course, handleAddToCard }) => {
                     <input type="radio" name="rating-6" className="mask mask-star-2 bg-orange-400 w-4" />
                     <span>({rating})</span>
                 </div>
-                <h4 className='text-3xl'>{course_title}</h4>
-                <div className='flex justify-between text-lg border-b border-dashed'>
+                <h4 className='text-3xl font-semibold'>{course_title}</h4>
+                <div className='flex justify-between text-lg border-b border-dashed border-blue-950'>
                     <p className='flex items-center mb-4'><GiBlackBook></GiBlackBook> <span className='mx-2'>Lesson</span> {lesson}</p>
                     <p className='flex items-center mb-4'><IoMdPerson></IoMdPerson> <span className='mx-2'>Students</span> {students}</p>
                 </div>

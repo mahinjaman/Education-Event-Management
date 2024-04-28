@@ -3,6 +3,7 @@
 @tailwind utilities;
 @import "react-alice-carousel/lib/alice-carousel.css";
 
+
 .primary-btn{
     background-color: #fd6d4b;
     padding: 15px 20px;
@@ -23,6 +24,7 @@
 .upToDown{
     animation: upToDown;
     animation-duration: 0.8s;
+    box-shadow: 0px 5px 20px rgb(13, 13, 58);
 }
 
 @keyframes upToDown {
