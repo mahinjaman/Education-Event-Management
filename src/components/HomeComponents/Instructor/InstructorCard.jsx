@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 const InstructorCard = ({instructor}) => {
     const { name, position, social, author_img } = instructor;
-    console.log(social);
     return (
         <div className='relative flex flex-col justify-center items-center overflow-hidden group text-white'>
             <div className='relative overflow-hidden flex flex-col items-center'>

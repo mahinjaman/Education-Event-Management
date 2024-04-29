@@ -18,7 +18,6 @@ const UserProvider = ({children}) => {
 
     }
 
-    console.log(addToCard);
     return (
         <HelmetProvider>
             <UserContext.Provider value={info}>

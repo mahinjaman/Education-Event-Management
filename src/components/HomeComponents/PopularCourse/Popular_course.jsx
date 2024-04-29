@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import PopularCourseCard from './PopularCourseCard';
-import { UserContext } from '../../UserProvider/UserProvider';
+import { UserContext } from '../../../UserProvider/UserProvider';
 
 const Popular_course = () => {
     const { addCard } = useContext(UserContext);

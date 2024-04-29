@@ -1,8 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import Instructor1 from '../../../public/images/instructor/insta-1.jpg'
-import Instructor2 from '../../../public/images/instructor/insta-2.jpg'
-import Instructor3 from '../../../public/images/instructor/insta-3.jpg'
-import Instructor4 from '../../../public/images/instructor/insta-4.jpg'
 import InstructorCard from './InstructorCard';
 const Instructors = () => {
     const [ instructors, setInstructors ] = useState([]);
