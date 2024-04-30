@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import BlogCard from './BlogCard';
+import HomeBlogCard from './HomeBlogCard';
 
-const Blog = () => {
+const HomeBlog = () => {
     const [newBlog, setNewBlog] = useState([])
     useEffect(()=>{
         fetch('blog.json')
@@ -17,11 +17,11 @@ const Blog = () => {
             </div>
             <div className='md:w-9/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
                 {
-                    displayBlog.map(blog => <BlogCard key={blog._id} blog={blog}></BlogCard>)
+                    displayBlog.map(blog => <HomeBlogCard key={blog._id} blog={blog}></HomeBlogCard>)
                 } 
             </div>
         </div>
     );
 };
 
-export default Blog;
+export default HomeBlog;

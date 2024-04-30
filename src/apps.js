@@ -3,11 +3,11 @@ const Counter = (number, id, countNum) =>{
     let countNumber = 0;
     const setIntervalId = setInterval(()=>{
         container.innerHTML = countNumber;
-        countNumber++;
+        countNumber += countNum;
         if(countNumber > number){
             clearInterval(setIntervalId);
         }
-    },countNum)
+    },70)
 }
 
 export {Counter}

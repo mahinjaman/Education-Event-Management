@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "course_img": "https://i.ibb.co/SyYvq9R/woman-working-out-with-equipment.jpg",
+    "course_img": "https://i.ibb.co/Z6g2Qqj/1.jpg",
     "course_title": "Cardio Blast",
     "lesson": 10,
     "students": 25,
@@ -10,7 +10,7 @@
   },
   {
     "id": 2,
-    "course_img": "https://i.ibb.co/PWxx9QH/athlete-weightlifting.jpg",
+    "course_img": "https://i.ibb.co/zxqxJ9Z/2.jpg",
     "course_title": "Strength Training 101",
     "lesson": 8,
     "students": 20,
@@ -19,7 +19,7 @@
   },
   {
     "id": 3,
-    "course_img": "https://i.ibb.co/CQxQ6NG/full-shot-woman-doing-yoga-mat.jpg",
+    "course_img": "https://i.ibb.co/p3NzzrL/3.jpg",
     "course_title": "Yoga Fusion",
     "lesson": 12,
     "students": 30,
@@ -28,7 +28,7 @@
   },
   {
     "id": 4,
-    "course_img": "https://i.ibb.co/zFJBF2W/2fb3b893841f42b484f9722fca8b849b.webp",
+    "course_img": "https://i.ibb.co/9G5Yd7r/4.png",
     "course_title": "HIIT Intensity",
     "lesson": 15,
     "students": 22,
@@ -37,7 +37,7 @@
   },
   {
     "id": 5,
-    "course_img": "https://i.ibb.co/2cqBNXV/image-asset.jpg",
+    "course_img": "https://i.ibb.co/FnRCMVB/5.jpg",
     "course_title": "Pilates Core",
     "lesson": 10,
     "students": 18,
@@ -46,7 +46,7 @@
   },
   {
     "id": 6,
-    "course_img": "https://i.ibb.co/2SqZmmj/portrait-super-fit-muscular-young-man-working-out-gym-with-barbell-blue.jpg",
+    "course_img": "https://i.ibb.co/vmt6fKf/6.jpg",
     "course_title": "CrossFit Challenge",
     "lesson": 20,
     "students": 35,

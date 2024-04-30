@@ -18,10 +18,10 @@ const Navbar = () => {
     },[])
 
     const PagesMenu = <>
-        <li><NavLink to={'/teacher'}>Branding</NavLink></li>
-        <li><NavLink to={'/teacher'}>Event</NavLink></li>
-        <li><NavLink to={'/teacher'}>Testimonial</NavLink></li>
-        <li><NavLink to={'/teacher'}>Sign In</NavLink></li>
+        <li className='hover:bg-slate-400 duration-500 hover:font-semibold rounded mb-2'><NavLink to={'/teacher'}>Branding</NavLink></li>
+        <li className='hover:bg-slate-400 duration-500 hover:font-semibold rounded mb-2'><NavLink to={'/teacher'}>Event</NavLink></li>
+        <li className='hover:bg-slate-400 duration-500 hover:font-semibold rounded mb-2'><NavLink to={'/teacher'}>Testimonial</NavLink></li>
+        <li className='hover:bg-slate-400 duration-500 hover:font-semibold rounded mb-2'><NavLink to={'/teacher'}>Sign In</NavLink></li>
     </>
 
 
@@ -31,7 +31,7 @@ const Navbar = () => {
         <li>
             <details>
                 <summary>Services</summary>
-                <ul className='p-2'>
+                <ul className='p-2 bg-slate-800'>
                     {
                         PagesMenu
                     }
@@ -61,7 +61,7 @@ const Navbar = () => {
                 <Link to={'/'}><img src={Logo} alt="Logo" /></Link>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1">
+                <ul className="menu menu-horizontal px-">
                     {
                         menu
                     }

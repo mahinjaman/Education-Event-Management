@@ -7,10 +7,10 @@ import funfactMainBg from '../../../public/images//fun-facts/fun-facts.jpg'
 import { Counter } from '../../apps';
 const FunFact = () => {
     useEffect(() =>{
-        Counter(85, 'monthlyUser', 30);
-        Counter(15, 'experience', 100);
-        Counter(13, 'project', 100);
-        Counter(10, 'happyCustomer', 100);
+        Counter(85, 'monthlyUser', 5);
+        Counter(15, 'experience', 1);
+        Counter(13, 'project', 2);
+        Counter(10, 'happyCustomer', 1);
     })
     
     return (
@@ -29,25 +29,25 @@ const FunFact = () => {
                         <div className='grid grid-cols-1 md:grid-cols-2 gap-5 lg:grid-cols-1 xl:w-10/12 xl:p-20'>
                             <div className='flex '>
                                 <div className='text-center'>
-                                    <h1 className='text-[#FD6D4B] text-7xl'><span id='monthlyUser'>0</span>K</h1>
+                                    <h1 className='text-[#FD6D4B] text-7xl font-bold'><span id='monthlyUser'>0</span>K</h1>
                                     <p className='font-semibold text-xl'>Active monthly users</p>
                                 </div>
                             </div>
                             <div className='flex justify-end'>
                                 <div className='text-center'>
-                                    <h1 className='text-[#FD6D4B] text-7xl'><span id='experience'>0</span>K</h1>
+                                    <h1 className='text-[#FD6D4B] text-7xl font-bold'><span id='experience'>0</span>K</h1>
                                     <p className='font-semibold text-xl'>Tears of experience</p>
                                 </div>
                             </div>
                             <div className='flex'>
                                 <div className='text-center'>
-                                    <h1 className='text-[#FD6D4B] text-7xl'><span id='project'>0</span>K</h1>
+                                    <h1 className='text-[#FD6D4B] text-7xl font-bold'><span id='project'>0</span>K</h1>
                                     <p className='font-semibold text-xl'>Project Complete</p>
                                 </div>
                             </div>
                             <div className='flex justify-end'>
                                 <div className='text-center'>
-                                    <h1 className='text-[#FD6D4B] text-7xl'><span id='happyCustomer'>0</span>K</h1>
+                                    <h1 className='text-[#FD6D4B] text-7xl font-bold'><span id='happyCustomer'>0</span>K</h1>
                                     <p className='font-semibold text-xl'>Happy Customer</p>
                                 </div>
                             </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-const BlogCard = ({blog}) => {
+const HomeBlogCard = ({blog}) => {
     console.log(blog);
     const { _id, thumbnail_url, title, posted_date, category} = blog;
     return (
@@ -19,8 +19,8 @@ const BlogCard = ({blog}) => {
     );
 };
 
-BlogCard.propTypes = {
+HomeBlogCard.propTypes = {
     blog: PropTypes.object.isRequired,
 }
 
-export default BlogCard;
+export default HomeBlogCard;
