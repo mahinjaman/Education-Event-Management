@@ -5,10 +5,14 @@ import { RxLightningBolt } from "react-icons/rx";
 import { Link } from 'react-router-dom';
 import { MdArrowForward } from "react-icons/md";
 import AboutFunFact from '../components/AboutComponents/AboutFunFact';
+import { Helmet } from 'react-helmet-async';
 
 const About = () => {
     return (
         <div className='w-9/12 mx-auto py-20'>
+            <Helmet>
+                <title>About</title>
+            </Helmet>
             <div className='grid grid-cols-1 md:grid-cols-2 items-center gap-10 mb-10'>
                 <div className='grid grid-cols-2 items-center'>
                     <div>
