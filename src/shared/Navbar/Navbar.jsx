@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import Logo from '../../../public/images/icon/logo.png'
+import { UserContext } from '../../UserProvider/UserProvider';
 const Navbar = () => {
+    const { user, SignOut } = useContext(UserContext);
     const [staticNav, setStaticNav] = useState(false);
-
+    console.log(user);
     useEffect(()=>{
         window.addEventListener('scroll', () => {
 
@@ -43,6 +45,24 @@ const Navbar = () => {
         <li> <NavLink to={'/contact'}>Contact</NavLink> </li>
     </>
 
+    const handleSignOut = e => {
+        e.preventDefault();
+        const makeSure = confirm('Make sure you are Sign out');
+        if(!makeSure){
+            return;
+        }
+        else{
+            SignOut()
+            .then(() => {
+                window.location.href = '/';
+                return;
+            })
+            .catch(err => {
+                console.log(err);
+            })
+        }    
+    }
+
     
 
     return (
@@ -68,7 +88,15 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <Link>Log In</Link>
+                {
+                    user ?
+                     <>
+                     <p className='mr-3'>{user.displayName}</p>
+                    <button onClick={handleSignOut}>Sign Out</button>
+                    </>
+                      :
+                     <Link to={'/signin'}>Sign In</Link>
+                }
             </div>
             
         </div>

@@ -3,7 +3,7 @@ import PopularCourseCard from './PopularCourseCard';
 import { UserContext } from '../../../UserProvider/UserProvider';
 
 const Popular_course = () => {
-    const { addCard } = useContext(UserContext);
+    const { addToCard } = useContext(UserContext);
 
     const [PopularCourse, setPopularCourse ] = useState([]);
     useEffect(()=>{
@@ -18,7 +18,7 @@ const Popular_course = () => {
             <h1 className='text-xl  md:text-4xl lg:text-5xl font-bold mb-4'>Pick A Course To Get Started</h1>
             <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5'>
                 {
-                    PopularCourse.map(course => <PopularCourseCard key={course.id} handleAddToCard={addCard} course={course}></PopularCourseCard>)
+                    PopularCourse.map(course => <PopularCourseCard key={course.id} handleAddToCard={addToCard} course={course}></PopularCourseCard>)
                 }
             </div>
         </div>

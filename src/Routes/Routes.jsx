@@ -3,6 +3,8 @@ import Root from "../LayOut/Root";
 import Home from "../Pages/Home";
 import About from "../Pages/About";
 import Blog from "../Pages/Blog";
+import SignUp from "../Pages/SignUp";
+import SignIn from "../Pages/SignIn";
 
 const router = createBrowserRouter([
     {
@@ -21,6 +23,14 @@ const router = createBrowserRouter([
                 path: '/blog',
                 loader: ()=> fetch('blog.json'),
                 element: <Blog></Blog>
+            },
+            {
+                path:'/signin',
+                element: <SignIn></SignIn>
+            },
+            {
+                path:'/signup',
+                element: <SignUp></SignUp>
             }
         ]
     }
