@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom';
 
-const ConfirmModal = ({content, userName, img}) => {
+const ConfirmModal = ({content, userName, img, navigate}) => {
     return (
         <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
             <div className="modal-box flex flex-col items-center">
@@ -12,7 +13,7 @@ const ConfirmModal = ({content, userName, img}) => {
                 <div className="modal-action">
                     <form method="dialog">
                         {/* if there is a button in form, it will close the modal */}
-                        <button className="btn">Close</button>
+                        <button className="btn"><Link to={navigate}>Close</Link></button>
                     </form>
                 </div>
             </div>
@@ -24,6 +25,7 @@ ConfirmModal.propTypes = {
     content: PropTypes.string.isRequired,
     userName: PropTypes.string.isRequired,
     img: PropTypes.string.isRequired,
+    navigate: PropTypes.string.isRequired,
 }
 
 export default ConfirmModal;

@@ -18,28 +18,14 @@ const Navbar = () => {
         })
     },[])
 
-    const PagesMenu = <>
-        <li className='hover:bg-slate-400 duration-500 hover:font-semibold rounded mb-2'><NavLink to={'/teacher'}>Branding</NavLink></li>
-        <li className='hover:bg-slate-400 duration-500 hover:font-semibold rounded mb-2'><NavLink to={'/teacher'}>Event</NavLink></li>
-        <li className='hover:bg-slate-400 duration-500 hover:font-semibold rounded mb-2'><NavLink to={'/teacher'}>Testimonial</NavLink></li>
-        <li className='hover:bg-slate-400 duration-500 hover:font-semibold rounded mb-2'><NavLink to={'/teacher'}>Sign In</NavLink></li>
-    </>
+    
 
 
     const menu = <>
         <li> <NavLink to={'/'}>Home</NavLink> </li>
         <li> <NavLink to={'/about'}>About</NavLink> </li>
-        <li>
-            <details>
-                <summary>Services</summary>
-                <ul className='p-2 bg-slate-800'>
-                    {
-                        PagesMenu
-                    }
-                </ul>
-            </details>
-        </li>
-        <li> <NavLink to={'/services'}>Teachers</NavLink> </li>
+        
+        <li> <NavLink to={'/services'}>Services</NavLink> </li>
         <li> <NavLink to={'/blog'}>Blog</NavLink> </li>
         <li> <NavLink to={'/contact'}>Contact</NavLink> </li>
     </>

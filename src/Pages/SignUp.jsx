@@ -79,7 +79,7 @@ const SignUp = () => {
                 <title>Sign Up</title>
             </Helmet>
             {/* Modal */}
-            {user && <ConfirmModal content={'Sign Up Account'} userName={userName} img={profileUrl}>
+            {user && <ConfirmModal content={'Sign Up Account'} userName={userName} img={profileUrl} navigate={'/signin'}>
                 
             </ConfirmModal>}
             {/* Modal */}
