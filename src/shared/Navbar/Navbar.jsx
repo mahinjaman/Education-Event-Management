@@ -3,9 +3,8 @@ import { Link, NavLink } from 'react-router-dom';
 import Logo from '../../../public/images/icon/logo.png'
 import { UserContext } from '../../UserProvider/UserProvider';
 const Navbar = () => {
-    const { user, SignOut } = useContext(UserContext);
+    const { currentUser, SignOutUser } = useContext(UserContext);
     const [staticNav, setStaticNav] = useState(false);
-    console.log(user);
     useEffect(()=>{
         window.addEventListener('scroll', () => {
 
@@ -52,7 +51,7 @@ const Navbar = () => {
             return;
         }
         else{
-            SignOut()
+            SignOutUser()
             .then(() => {
                 window.location.href = '/';
                 return;
@@ -89,10 +88,10 @@ const Navbar = () => {
             </div>
             <div className="navbar-end">
                 {
-                    user ?
+                    currentUser ?
                      <>
-                     <p className='mr-3'>{user.displayName}</p>
-                    <button onClick={handleSignOut}>Sign Out</button>
+                    <img className='rounded-full w-10 mr-4' src={currentUser.photoURL} alt="" />
+                    <button className='border py-2 px-5 font-semibold rounded-md' onClick={handleSignOut}>Sign Out</button>
                     </>
                       :
                      <Link to={'/signin'}>Sign In</Link>

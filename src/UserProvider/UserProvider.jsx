@@ -7,8 +7,8 @@ export const UserContext = createContext(null)
 const UserProvider = ({children}) => {
     const [user , setUser] = useState(null)
     const [addCard, setAddToCard ] = useState([]);
-    const [ loading, setLoading ] = useState(true)
-
+    const [ loading, setLoading ] = useState(true);
+    const [currentUser, setCurrentUser ] = useState(null)
     const addToCard = newCard =>{
         if (addCard.includes(newCard)){
             alert('This card has been already added');
@@ -23,13 +23,13 @@ const UserProvider = ({children}) => {
         return createUserWithEmailAndPassword(Auth,email, password)
     }
 
-    const SignIn = (email, password) => {
+    const SignInUser = (email, password) => {
         setLoading(true);
         return signInWithEmailAndPassword(Auth, email, password)
 
     }
 
-    const SignOut= () =>{
+    const SignOutUser= () =>{
         setLoading(true);
         return signOut(Auth)
     }
@@ -42,19 +42,24 @@ const UserProvider = ({children}) => {
         return ()=>{
             unSubscribe();
         }
-    },[])
+    },[]);
+    const handleAddCurrentUser = user => {
+        setLoading(true);
+        setCurrentUser(user);
+    }
 
     const info = {
         SignUp,
-        SignIn,
-        SignOut,
+        SignInUser,
+        SignOutUser,
         loading,
         addToCard,
+        handleAddCurrentUser,
         addCard,
         user,
+        currentUser
     }
     
-
     return (
         <HelmetProvider>
             <UserContext.Provider value={info}>
