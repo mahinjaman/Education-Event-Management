@@ -3,7 +3,12 @@ import PropTypes from 'prop-types';
 import { HelmetProvider } from 'react-helmet-async';
 import { createUserWithEmailAndPassword, FacebookAuthProvider, GithubAuthProvider, GoogleAuthProvider, onAuthStateChanged, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithPopup, signOut } from 'firebase/auth';
 import Auth from '../Firebase/Firebase.config';
+
+
 export const UserContext = createContext(null)
+
+
+
 const UserProvider = ({children}) => {
     const [user , setUser] = useState(null)
     const [addCard, setAddToCard ] = useState([]);
@@ -21,7 +26,7 @@ const UserProvider = ({children}) => {
         const newAllCard = [...addCard, newCard ];
         setAddToCard(newAllCard);
     }
-    console.log(addCard);
+    
     const SignUp = (email, password) =>{
         setLoading(true);
         return createUserWithEmailAndPassword(Auth,email, password)
@@ -40,7 +45,7 @@ const UserProvider = ({children}) => {
 
     
     const handleAddCurrentUser = user => {
-        setLoading(true);
+        setLoading(false);
         setCurrentUser(user);
     }
 
@@ -67,6 +72,17 @@ const UserProvider = ({children}) => {
         return sendPasswordResetEmail(Auth, email)
     }
 
+
+    useEffect(() => {
+        const unSubscribe = onAuthStateChanged(Auth, currentUser => {
+            setUser(currentUser);
+            setLoading(false);
+        })
+        return () => {
+            unSubscribe();
+        }
+    }, []);
+
     const info = {
         SignUp,
         SingInGoogle,
@@ -83,15 +99,7 @@ const UserProvider = ({children}) => {
         currentUser
     }
 
-    useEffect(() => {
-        const unSubscribe = onAuthStateChanged(Auth, currentUser => {
-            setUser(currentUser);
-            setLoading(false);
-        })
-        return () => {
-            unSubscribe();
-        }
-    }, []);
+    
 
     return (
         <HelmetProvider>
