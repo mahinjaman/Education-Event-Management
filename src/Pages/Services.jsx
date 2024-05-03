@@ -6,7 +6,6 @@ const Services = () => {
     return (
         <div>
             <h1 className='font-bold text-7xl text-center py-10'>Services Available :- {services.length}</h1>
-
         </div>
     );
 };

@@ -10,6 +10,7 @@ import Services from "../Pages/Services";
 import PrivateRoute from "../PrivateRoutes/PrivateRoute";
 import Event from "../Pages/Event";
 import EventDetails from "../Pages/EventDetails";
+import AddCard from "../Pages/AddCard";
 
 const router = createBrowserRouter([
     {
@@ -50,9 +51,14 @@ const router = createBrowserRouter([
                 element: <Event></Event>
             },
             {
-                path:'/event-details/:id',
+                path:'/event-details/:event_id',
                 loader: ()=> fetch('events.json'),
                 element:<EventDetails></EventDetails>
+            },
+            {
+                path:'/add-card',
+                loader: ()=> fetch('popular_course.json'),
+                element: <AddCard></AddCard>
             }
         ]
     }

@@ -2,10 +2,11 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import Logo from '../../../public/images/icon/logo.png'
 import { UserContext } from '../../UserProvider/UserProvider';
+import { IoCartOutline } from "react-icons/io5";
 const Navbar = () => {
-    const { currentUser, SignOutUser } = useContext(UserContext);
+    const { currentUser, SignOutUser, addCard } = useContext(UserContext);
     const [staticNav, setStaticNav] = useState(false);
-    useEffect(()=>{
+    useEffect(() => {
         window.addEventListener('scroll', () => {
 
             if (window.scrollY > 300) {
@@ -16,9 +17,9 @@ const Navbar = () => {
             }
 
         })
-    },[])
+    }, [])
 
-    
+
 
 
     const menu = <>
@@ -33,22 +34,22 @@ const Navbar = () => {
     const handleSignOut = e => {
         e.preventDefault();
         const makeSure = confirm('Make sure you are Sign out');
-        if(!makeSure){
+        if (!makeSure) {
             return;
         }
-        else{
+        else {
             SignOutUser()
-            .then(() => {
-                window.location.href = '/';
-                return;
-            })
-            .catch(err => {
-                console.log(err);
-            })
-        }    
+                .then(() => {
+                    window.location.href = '/';
+                    return;
+                })
+                .catch(err => {
+                    console.log(err);
+                })
+        }
     }
 
-    
+
 
     return (
         <div className={`navbar py-5 lg:px-40 text-white bg-slate-900  ${staticNav ? 'fixed py-5 upToDown z-50' : ' border-b'}`}>
@@ -75,15 +76,19 @@ const Navbar = () => {
             <div className="navbar-end">
                 {
                     currentUser ?
-                     <>
-                    <img className='rounded-full w-10 mr-4' src={currentUser.photoURL} alt="" />
-                    <button className='border py-2 px-5 font-semibold rounded-md' onClick={handleSignOut}>Sign Out</button>
-                    </>
-                      :
-                     <Link to={'/signin'}>Sign In</Link>
+                        <>
+                            <div className='relative p-3 mr-5'>
+                                <Link className='relative text-2xl' to={'/add-card'}><IoCartOutline></IoCartOutline></Link>
+                                <p className='absolute top-0 right-0'>{addCard.length}</p>
+                            </div>
+                            <img className='rounded-full w-10 mr-4' src={currentUser.photoURL} alt="" />
+                            <button className='border py-2 px-5 font-semibold rounded-md' onClick={handleSignOut}>Sign Out</button>
+                        </>
+                        :
+                        <Link to={'/signin'}>Sign In</Link>
                 }
             </div>
-            
+
         </div>
     );
 };

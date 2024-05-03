@@ -11,7 +11,7 @@ const EventCard = ({ event }) => {
             alert('Please SignIn First')
             return navigate('/signin')
         }
-        return navigate(`/event-details/:${event_id}`)
+        return navigate(`/event-details/${event_id}`)
     }
     return (
         <div className='group shadow-xl p-5 rounded-md bg-slate-50' onClick={handleDetails}>
