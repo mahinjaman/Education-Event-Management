@@ -51,7 +51,7 @@ const About = () => {
                         </div>
                     </div>
                     <div className='flex gap-4 items-center'>
-                        <button className='py-3 px-10 bg-emerald-500 text-white font-semibold text-lg rounded flex items-center'><Link to={'/login'}>Admission Open</Link> <span className='text-2xl ml-2'><MdArrowForward></MdArrowForward></span></button>
+                        <button className='py-3 px-10 bg-emerald-500 text-white font-semibold text-lg rounded flex items-center'><Link to={'/contact'}>Admission Open</Link> <span className='text-2xl ml-2'><MdArrowForward></MdArrowForward></span></button>
                         <img src="https://i.ibb.co/nR4xhjQ/download.png" alt="" />
                     </div>
                 </div>

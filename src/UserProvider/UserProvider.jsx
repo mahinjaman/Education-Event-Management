@@ -14,6 +14,7 @@ const UserProvider = ({children}) => {
     const [addCard, setAddToCard ] = useState([]);
     const [ loading, setLoading ] = useState(true);
     const [currentUser, setCurrentUser ] = useState(null);
+    
     const addToCard = newCard =>{
         if (addCard.includes(newCard)){
             alert('This card has been already added');
@@ -48,6 +49,13 @@ const UserProvider = ({children}) => {
         setLoading(false);
         setCurrentUser(user);
     }
+
+    useEffect(()=>{
+        if(user){
+            setLoading(false);
+            setCurrentUser(user);
+        }
+    },[user])
 
     const googleProvider = new GoogleAuthProvider()
     const SingInGoogle = () =>{

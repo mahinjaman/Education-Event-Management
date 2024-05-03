@@ -1,0 +1,50 @@
+[
+  {
+    "service_id": "001",
+    "service_title": "Personal Training Sessions",
+    "thumbnail_url": "https://i.ibb.co/kxVfH4z/1.jpg",
+    "description": "Get personalized fitness guidance with one-on-one training sessions tailored to your goals and fitness level. Our certified personal trainers will create a customized workout plan and provide expert coaching to help you achieve maximum results.",
+    "price": 250,
+    "time": "60 minutes"
+  },
+  {
+    "service_id": "002",
+    "service_title": "Group Fitness Classes",
+    "thumbnail_url": "https://i.ibb.co/L1xMzTN/2.jpg",
+    "description": "Join our energizing group fitness classes led by experienced instructors. From high-intensity interval training to relaxing yoga sessions, we offer a variety of classes suitable for all fitness levels. Enjoy the motivation and camaraderie of exercising in a group setting.",
+    "price": 300,
+    "time": "45-60 minutes"
+  },
+  {
+    "service_id": "003",
+    "service_title": "Nutritional Counseling",
+    "thumbnail_url": "https://i.ibb.co/c3g2K98/3.jpg",
+    "description": "Achieve your health and wellness goals with our personalized nutritional counseling services. Our registered dietitians will work with you to develop a balanced meal plan, provide dietary recommendations, and offer ongoing support to help you make healthy choices and optimize your nutrition.",
+    "price": 400,
+    "time": "60 minutes"
+  },
+  {
+    "service_id": "004",
+    "service_title": "Massage Therapy",
+    "thumbnail_url": "https://i.ibb.co/gg164Pj/4.jpg",
+    "description": "Relax and rejuvenate with our massage therapy services. Whether you're seeking relief from muscle tension, stress reduction, or overall relaxation, our skilled massage therapists will customize a treatment to address your specific needs and promote healing and well-being.",
+    "price": 350,
+    "time": "30-90 minutes"
+  },
+  {
+    "service_id": "005",
+    "service_title": "Fitness Assessments",
+    "thumbnail_url": "https://i.ibb.co/Vqbb8Vz/5.jpg",
+    "description": "Measure your fitness progress and set new goals with our comprehensive fitness assessments. Our certified fitness professionals will conduct a series of tests to evaluate your strength, flexibility, cardiovascular endurance, and body composition, providing valuable insights to help you optimize your workouts and track your improvements over time.",
+    "price": 280,
+    "time": "60 minutes"
+  },
+  {
+    "service_id": "006",
+    "service_title": "Specialized Workshops",
+    "thumbnail_url": "https://i.ibb.co/R2P549C/6.jpg",
+    "description": "Expand your knowledge and skills with our specialized workshops covering a range of fitness and wellness topics. From nutrition seminars to self-defense classes, our workshops offer valuable information and practical techniques to help you lead a healthier, more active lifestyle.",
+    "price": 220,
+    "time": "90 minutes"
+  }
+]

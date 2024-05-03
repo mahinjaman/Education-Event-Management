@@ -73,14 +73,14 @@
 .no-spinner::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
-
 }
 
 .active{
-    border-bottom: 2px solid tomato;
-    background-color: #21093d !important;
+    background-color: transparent !important;
+    box-shadow: 0px 10px 10px rgb(135, 215, 247);
     font-weight: 600;
     letter-spacing: 1px;
+    color: #ffffff !important;
 }
 .contact{
     background:linear-gradient(45deg, rgb(10, 185, 157) 20%, rgba(238, 238, 238, 0.637) 10%);

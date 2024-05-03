@@ -8,6 +8,8 @@ import SignIn from "../Pages/SignIn";
 import Contact from "../Pages/Contact";
 import Services from "../Pages/Services";
 import PrivateRoute from "../PrivateRoutes/PrivateRoute";
+import Event from "../Pages/Event";
+import EventDetails from "../Pages/EventDetails";
 
 const router = createBrowserRouter([
     {
@@ -24,7 +26,6 @@ const router = createBrowserRouter([
             },
             {
                 path: '/blog',
-                loader: ()=> fetch('blog.json'),
                 element: <Blog></Blog>
             },
             {
@@ -41,7 +42,17 @@ const router = createBrowserRouter([
             },
             {
                 path:'/services',
+                loader: ()=> fetch('services.json'),
                 element: <PrivateRoute><Services></Services></PrivateRoute>
+            },
+            {
+                path: '/event',
+                element: <Event></Event>
+            },
+            {
+                path:'/event-details/:id',
+                loader: ()=> fetch('events.json'),
+                element:<EventDetails></EventDetails>
             }
         ]
     }

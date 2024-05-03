@@ -5,7 +5,6 @@ import { FcSms } from "react-icons/fc";
 import { SlCalender } from "react-icons/sl";
 import PropTypes from 'prop-types'
 const BlogCard = ({blog}) => {
-    console.log(blog);
     const { _id, comments, posted_date, thumbnail_url, title } = blog;
     return (
         <div className='bg-slate-300 p-5 rounded-md group flex flex-col gap-4'>
