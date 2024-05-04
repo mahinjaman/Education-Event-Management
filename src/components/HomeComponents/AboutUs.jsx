@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import getInspired from '../../../public/images/icon/inspire.png'
 import OtherInspired from '../../../public/images/icon/other_inspire.png'
 import aboutMainImg from '../../../public//images/about-img/home-about-img.png'
@@ -6,9 +6,14 @@ import aboutSubImg1 from '../../../public//images/about-img//about_sub1.png'
 import aboutSubImg2 from '../../../public//images/about-img//about_sub2.png'
 import aboutSubImg3 from '../../../public//images/about-img//about_sub3.png'
 import { NavLink } from 'react-router-dom';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 const AboutUs = () => {
+    useEffect(() => {
+        Aos.init();
+    }, [])
     return (
-        <div className='bg-orange-50'>
+        <div className='bg-orange-50' data-aos="zoom-in-left">
             <div className='grid grid-cols-1 p-5 lg:grid-cols-1 xl:grid-cols-2 md:w-8/12 gap-14 mx-auto py-20 items-center'>
 
                 <div className='relative'>

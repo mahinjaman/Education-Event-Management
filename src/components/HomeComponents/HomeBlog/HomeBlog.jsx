@@ -1,7 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import HomeBlogCard from './HomeBlogCard';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const HomeBlog = () => {
+    useEffect(() => {
+        Aos.init();
+    }, [])
     const [newBlog, setNewBlog] = useState([])
     useEffect(()=>{
         fetch('blog.json')
@@ -10,7 +15,7 @@ const HomeBlog = () => {
     },[])
     const displayBlog = newBlog.slice(0,3);
     return (
-        <div className='py-20'>
+        <div className='py-20' data-aos="zoom-in-right">
             <div className='text-center mb-14 relative w-10/12 md:w-full mx-auto'>
                 <p className='text-[#FD6D4B] text-xl'>OUR BLOG & ARTICAL</p>
                 <h4 className='font-bold text-3xl lg:text-7xl'>Latest News Post</h4>

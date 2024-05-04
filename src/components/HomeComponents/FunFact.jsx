@@ -5,7 +5,12 @@ import Spinner from '../../../public/images/icon/funfactSpinner.png'
 import anim from '../../../public/images/icon/funfactAnime.png'
 import funfactMainBg from '../../../public/images//fun-facts/fun-facts.jpg'
 import { Counter } from '../../apps';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 const FunFact = () => {
+    useEffect(() => {
+        Aos.init();
+    }, [])
     useEffect(() =>{
         Counter(85, 'monthlyUser', 5);
         Counter(15, 'experience', 1);
@@ -14,7 +19,7 @@ const FunFact = () => {
     })
     
     return (
-        <div style={{ backgroundImage: `url(${funfactMainBg})`}} className='md:my-40 text-white'>
+        <div style={{ backgroundImage: `url(${funfactMainBg})` }} className='md:my-40 text-white' data-aos="zoom-in-left">
             <div className='relative bg-blue-950 bg-opacity-40 py-20'>
                 <div className='w-10/12 mx-auto'>
                     <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 lg:w-full'>

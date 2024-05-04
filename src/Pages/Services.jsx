@@ -1,11 +1,16 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
+import ServicesCard from '../components/services/ServicesCard';
 
 const Services = () => {
     const services = useLoaderData();
     return (
-        <div>
-            <h1 className='font-bold text-7xl text-center py-10'>Services Available :- {services.length}</h1>
+        <div className='w-8/12 mx-auto py-20'>
+            <div className='grid grid-cols-1 lg:grid-cols-3 gap-10'>
+                {
+                    services.map(service => <ServicesCard key={service.service_id} service={service}></ServicesCard>)
+                }
+            </div>
         </div>
     );
 };

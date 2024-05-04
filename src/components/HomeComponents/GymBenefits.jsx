@@ -1,13 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FaRegCheckCircle } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import benefitsMainImg from '../../../public/images/GymBenefits/benefits.webp'
 import benefitsAnime1 from '../../../public/images/GymBenefits/GymAnime1.png'
 import benefitsAnime2 from '../../../public/images/GymBenefits/GymAnime2.png'
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const GymBenefits = () => {
+    useEffect(() => {
+        Aos.init();
+    }, [])
     return (
-        <div className='grid grid-cols-1 lg:grid-cols-2  w-10/12 xl:w-8/12 mx-auto my-20 items-center gap-10'>
+        <div className='grid grid-cols-1 lg:grid-cols-2  w-10/12 xl:w-8/12 mx-auto my-20 items-center gap-10' data-aos="zoom-in-left">
             <div className='flex flex-col text-via-blue-950'>
                 <h4 className='text-[#fd6d4b] text-lg font-semibold mb-4'>GYM BENEFITS</h4>
                 <h1 className='text-5xl font-bold mb-5'>Experience The Ultimate Gym To Workout</h1>

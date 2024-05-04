@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Counter } from '../../apps';
-
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 const AboutFunFact = () => {
     useEffect(()=>{
         Counter(3, 'trained', 1);

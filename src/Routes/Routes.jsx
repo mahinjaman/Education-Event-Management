@@ -11,6 +11,7 @@ import PrivateRoute from "../PrivateRoutes/PrivateRoute";
 import Event from "../Pages/Event";
 import EventDetails from "../Pages/EventDetails";
 import AddCard from "../Pages/AddCard";
+import BlogDetails from "../Pages/BlogDetails";
 
 const router = createBrowserRouter([
     {
@@ -59,6 +60,10 @@ const router = createBrowserRouter([
                 path:'/add-card',
                 loader: ()=> fetch('popular_course.json'),
                 element: <AddCard></AddCard>
+            },
+            {
+                path:'/blog-details',
+                element: <BlogDetails></BlogDetails>
             }
         ]
     }

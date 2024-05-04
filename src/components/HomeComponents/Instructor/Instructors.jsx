@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import InstructorCard from './InstructorCard';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 const Instructors = () => {
     const [ instructors, setInstructors ] = useState([]);
     useEffect(()=>{
@@ -7,8 +9,11 @@ const Instructors = () => {
         .then(res => res.json())
         .then(data => setInstructors(data))
     },[])
+    useEffect(() => {
+        Aos.init();
+    }, [])
     return (
-        <div className='bg-orange-50 py-28'>
+        <div className='bg-orange-50 py-28' data-aos="zoom-in-left">
             <div>
                 <div className='text-center mb-14'>
                     <p className='text-[#FD6D4B] text-xl'>INSTRUCTORS</p>

@@ -1,10 +1,15 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 const Testimonial = () => {
+    useEffect(() => {
+        Aos.init();
+    }, [])
     return (
-        <div className='py-28 relative'>
+        <div className='py-28 relative' data-aos="zoom-in-left">
             <div className='text-center mb-14 relative w-10/12 md:w-full mx-auto'>
                 <p className='text-[#FD6D4B] text-xl'>TESTIMONIAL</p>
                 <h4 className='font-bold text-3xl lg:text-7xl'>Clients Are Always Satisfied With Us</h4>

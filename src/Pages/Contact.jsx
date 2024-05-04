@@ -2,6 +2,7 @@ import React from 'react';
 import { FaFacebookF, FaLocationDot } from "react-icons/fa6";
 import { FaPhoneAlt, FaArrowDown, FaInstagram, FaTwitter, FaPinterestP } from "react-icons/fa";
 import { BsFillClockFill } from "react-icons/bs";
+
 const Contact = () => {
     return (
         <div className='py-20'>

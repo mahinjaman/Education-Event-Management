@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { FaPlay } from "react-icons/fa";
 import heroImage from '../../../public/images/hero-img.png';
 import heroImgBg from '../../../public/images/hero-img-bg.png';
-
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Hero = () => {
+    useEffect(() => {
+        Aos.init();
+    }, [])
     return (
-        <div className='bg-orange-50 text-via-blue-950 pt-10'>
+        <div className='bg-orange-50 text-via-blue-950 pt-10' data-aos="zoom-in-left">
             <div className='grid grid-cols-1 lg:grid-cols-2 p-10 md:p-0 md:w-10/12 xl:w-9/12 mx-auto '>
                 <div className='flex flex-col justify-center space-y-7 mb-10 lg:mb-0'>
                     <h1 className='text-4xl lg:text-7xl font-bold'>Healthy In Side Fresh Our Side.</h1>

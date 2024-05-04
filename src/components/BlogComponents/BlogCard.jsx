@@ -20,7 +20,7 @@ const BlogCard = ({blog}) => {
             </div>
             
             <div>
-                <button className='py-3 px-10 bg-emerald-500 text-white font-semibold text-lg rounded flex items-center'><Link to={`/blog-details/${_id}`}>Read More</Link> <span className='text-2xl ml-2'><MdArrowForward></MdArrowForward></span></button>
+                <button className='py-3 px-10 bg-emerald-500 text-white font-semibold text-lg rounded flex items-center'><Link to={'/blog-details'}>Read More</Link> <span className='text-2xl ml-2'><MdArrowForward></MdArrowForward></span></button>
             </div>
         </div>
     );

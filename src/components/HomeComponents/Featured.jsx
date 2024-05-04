@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Exercise from '../../../public/images/icon/exercise.png'
 import Nutrition from '../../../public/images/icon//nutrition.png'
 import Guides from '../../../public/images/icon/guides.png'
@@ -11,7 +11,12 @@ import slideImg3 from '../../../public/images/slider-images/slider3.png'
 import slideImg4 from '../../../public/images/slider-images/slider4.png'
 import slideImg5 from '../../../public/images/slider-images/slider5.png'
 import slideImg6 from '../../../public/images/slider-images/slider6.png'
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 const Featured = () => {
+    useEffect(() => {
+        Aos.init();
+    }, [])
     const items = [
         <div className="item" data-value="1">
             <img src={slideImg1} alt="" />
@@ -35,7 +40,7 @@ const Featured = () => {
 
    
     return (
-        <div className='bg-slate-100 text-via-blue-950'>
+        <div className='bg-slate-100 text-via-blue-950' data-aos="zoom-in-left">
             <div className='space-y-20 py-24  xl:w-10/12 mx-auto'>
                 {/* Featured */}
                 <div >

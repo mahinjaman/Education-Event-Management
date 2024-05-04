@@ -7,6 +7,7 @@ import { MdArrowForward } from "react-icons/md";
 import AboutFunFact from '../components/AboutComponents/AboutFunFact';
 import { Helmet } from 'react-helmet-async';
 
+
 const About = () => {
     return (
         <div className='w-9/12 mx-auto py-20'>

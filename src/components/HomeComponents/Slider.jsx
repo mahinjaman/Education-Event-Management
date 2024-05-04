@@ -2,6 +2,10 @@ import React from 'react';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import PropTypes from 'prop-types';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
+
 const responsive = {
     200: { items: 1 },
     300: { items: 2 },

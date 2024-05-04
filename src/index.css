@@ -77,7 +77,7 @@
 
 .active{
     background-color: transparent !important;
-    box-shadow: 0px 10px 10px rgb(135, 215, 247);
+    border-bottom: 2px solid turquoise;
     font-weight: 600;
     letter-spacing: 1px;
     color: #ffffff !important;

@@ -9,80 +9,49 @@ import Testimonial from '../components/HomeComponents/Testimonial';
 import Blog from '../components/HomeComponents/HomeBlog/HomeBlog';
 import Instructors from '../components/HomeComponents/Instructor/Instructors';
 import Popular_course from '../components/HomeComponents/PopularCourse/Popular_course';
-import Aos from 'aos';
-import 'aos/dist/aos.css';
+
 
 const Home = () => {
-    useEffect(() => {
-        Aos.init();
-    }, [])
     return (
         <div>
             <Helmet>
                 <title>Home</title>
             </Helmet>
             <div
-                data-aos="zoom-in-down"
-                data-aos-anchor-placement="top-center"
             >
                 <Hero></Hero>
             </div>
 
-            <div
-                data-aos="zoom-in-down"
-                data-aos-anchor-placement="top-center"
-            >
+            <div>
                 <Featured></Featured>
             </div>
 
-            <div
-                data-aos="zoom-in-left"
-                data-aos-anchor-placement="top-center"
-            >
+            <div>
                 <AboutUs></AboutUs>
             </div>
 
-            <div
-                data-aos="zoom-in-down"
-                data-aos-anchor-placement="top-center"
-            >
+            <div>
                 <Popular_course></Popular_course>
             </div>
 
-            <div
-                data-aos="zoom-in-down"
-                data-aos-anchor-placement="top-center"
-            >
+            <div>
                 <FunFact></FunFact>
             </div>
 
 
-            <div
-                data-aos="zoom-in-down"
-                data-aos-anchor-placement="top-center"
-            >
+            <div>
                 <GymBenefits></GymBenefits>
             </div>
 
-            <div
-                data-aos="zoom-in-down"
-                data-aos-anchor-placement="top-center"
-            >
+            <div>
                 <Instructors></Instructors>
             </div>
 
-            <div
-                data-aos="zoom-in-down"
-                data-aos-anchor-placement="top-center"
-            >
+            <div>
                 <Testimonial></Testimonial>
             </div>
 
-            <div
-                data-aos="zoom-in-down"
-                data-aos-anchor-placement="top-center"
-
-            >
+            <div>
                 <Blog></Blog>
             </div>
         </div>
